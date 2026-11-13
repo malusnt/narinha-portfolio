@@ -64,6 +64,37 @@ Durante o desenvolvimento da Narinha, foram trabalhados desafios relacionados a:
 - Organização de fluxos automatizados utilizando n8n.
 
 O desenvolvimento também proporcionou experiência prática com resolução de erros de integração, validação de dados e testes de comunicação entre diferentes serviços.
+
+## Arquitetura técnica
+
+O funcionamento da Narinha é baseado na integração entre diferentes componentes:
+
+```text
+Usuário
+   |
+   v
+Aplicativo (React Native / Expo)
+   |
+   v
+Backend (Python / FastAPI)
+   |
+   v
+Banco de dados (MongoDB Atlas)
+
+Assistente de IA (GPTMaker)
+   |
+   v
+Automação (n8n)
+   |
+   v
+API do Backend (FastAPI)
+   |
+   v
+Registro e organização das informações
+```
+
+Essa arquitetura permite separar a interface, as regras de negócio, o armazenamento de dados e as automações, facilitando a manutenção e a evolução do sistema.
+
 ## Desenvolvimento
 
 O projeto está em desenvolvimento contínuo, com implementação gradual de funcionalidades, integração entre serviços e aprimoramento da experiência do usuário.
