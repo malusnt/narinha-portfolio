@@ -31,6 +31,16 @@ O projeto busca integrar inteligência artificial, automação de processos e de
 | GPTMaker | Configuração do assistente de IA |
 | React Native / Expo | Desenvolvimento do aplicativo |
 
+## Funcionalidades implementadas
+
+- **Gestão de tarefas:** criação e consulta de tarefas por meio de integração com a API.
+- **Organização de prazos:** interpretação de datas e horários em linguagem natural.
+- **Integração com IA:** comunicação entre GPTMaker e fluxos automatizados.
+- **Automação de processos:** utilização do n8n para conectar os serviços.
+- **Backend com autenticação:** endpoints protegidos para operações de integração.
+- **Gestão de compromissos:** desenvolvimento da integração para registro de agendamentos.
+
+
 ## Arquitetura do projeto
 
 A aplicação está sendo desenvolvida com uma arquitetura que integra:
