@@ -10,7 +10,7 @@
 
 A **Narinha** é uma assistente pessoal e administrativa inteligente, desenvolvida para auxiliar na organização de tarefas, compromissos e atividades do dia a dia.
 
-O projeto busca integrar inteligência artificial, automação de processos e desenvolvimento de aplicações para criar uma experiência prática, organizada e intuitiva.
+O projeto integra inteligência artificial, automação de processos e desenvolvimento de aplicações para proporcionar uma experiência prática, organizada e intuitiva.
 
 ## Objetivos
 
@@ -36,20 +36,58 @@ O projeto busca integrar inteligência artificial, automação de processos e de
 - **Gestão de tarefas:** criação e consulta de tarefas por meio de integração com a API.
 - **Organização de prazos:** interpretação de datas e horários em linguagem natural.
 - **Integração com IA:** comunicação entre GPTMaker e fluxos automatizados.
-- **Automação de processos:** utilização do n8n para conectar os serviços.
+- **Automação de processos:** utilização do n8n para conectar diferentes serviços.
 - **Backend com autenticação:** endpoints protegidos para operações de integração.
-- **Gestão de compromissos:** desenvolvimento da integração para registro de agendamentos.
-
+- **Gestão de compromissos:** integração com o backend em desenvolvimento para registro de agendamentos.
 
 ## Arquitetura do projeto
 
-A aplicação está sendo desenvolvida com uma arquitetura que integra:
+A aplicação utiliza uma arquitetura composta por diferentes camadas:
 
 1. **Frontend:** interface do aplicativo.
 2. **Backend:** processamento de requisições e regras de negócio.
 3. **Banco de dados:** armazenamento das informações.
 4. **Automação:** integração entre serviços e execução de fluxos.
 5. **Inteligência artificial:** interpretação das solicitações do usuário.
+
+## Arquitetura técnica
+
+O funcionamento da Narinha envolve dois fluxos principais:
+
+### Aplicativo e backend
+
+```text
+USUÁRIO
+   |
+   v
+APLICATIVO (React Native / Expo)
+   |
+   v
+BACKEND (Python / FastAPI)
+   |
+   v
+BANCO DE DADOS (MongoDB Atlas)
+```
+
+### Inteligência artificial e automação
+
+```text
+USUÁRIO
+   |
+   v
+GPTMaker (Assistente de IA)
+   |
+   v
+n8n (Automação)
+   |
+   v
+BACKEND (FastAPI)
+   |
+   v
+BANCO DE DADOS (MongoDB Atlas)
+```
+
+Essa arquitetura permite separar a interface, as regras de negócio, o armazenamento de dados e as automações, facilitando a manutenção e a evolução do sistema.
 
 ## Desafios técnicos e aprendizados
 
@@ -65,36 +103,6 @@ Durante o desenvolvimento da Narinha, foram trabalhados desafios relacionados a:
 
 O desenvolvimento também proporcionou experiência prática com resolução de erros de integração, validação de dados e testes de comunicação entre diferentes serviços.
 
-## Arquitetura técnica
-
-O funcionamento da Narinha é baseado na integração entre diferentes componentes:
-
-```text
-Usuário
-   |
-   v
-Aplicativo (React Native / Expo)
-   |
-   v
-Backend (Python / FastAPI)
-   |
-   v
-Banco de dados (MongoDB Atlas)
-
-Assistente de IA (GPTMaker)
-   |
-   v
-Automação (n8n)
-   |
-   v
-API do Backend (FastAPI)
-   |
-   v
-Registro e organização das informações
-```
-
-Essa arquitetura permite separar a interface, as regras de negócio, o armazenamento de dados e as automações, facilitando a manutenção e a evolução do sistema.
-
 ## Desenvolvimento
 
 O projeto está em desenvolvimento contínuo, com implementação gradual de funcionalidades, integração entre serviços e aprimoramento da experiência do usuário.
@@ -103,8 +111,12 @@ O projeto está em desenvolvimento contínuo, com implementação gradual de fun
 
 Este projeto representa uma oportunidade de aplicar conhecimentos de Engenharia de Inteligência Artificial, desenvolvimento de software, integração de APIs, automação e bancos de dados em uma aplicação prática.
 
+## Segurança e privacidade
+
+Por utilizar integrações e informações administrativas, o código-fonte completo permanece em repositório privado.
+
+Este repositório público apresenta a proposta, a arquitetura e as tecnologias utilizadas no projeto, sem expor credenciais, tokens, dados pessoais ou informações confidenciais.
+
 ---
 
 **Projeto desenvolvido como iniciativa de estudo e desenvolvimento tecnológico.**
-
-O código-fonte completo permanece em repositório privado por questões de segurança e proteção do projeto.
