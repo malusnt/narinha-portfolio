@@ -51,6 +51,19 @@ A aplicação está sendo desenvolvida com uma arquitetura que integra:
 4. **Automação:** integração entre serviços e execução de fluxos.
 5. **Inteligência artificial:** interpretação das solicitações do usuário.
 
+## Desafios técnicos e aprendizados
+
+Durante o desenvolvimento da Narinha, foram trabalhados desafios relacionados a:
+
+- Integração de serviços externos por meio de APIs HTTP.
+- Desenvolvimento e validação de endpoints com FastAPI.
+- Autenticação e proteção das requisições.
+- Integração entre inteligência artificial e automações.
+- Interpretação e conversão de datas em linguagem natural.
+- Comunicação entre frontend, backend e banco de dados.
+- Organização de fluxos automatizados utilizando n8n.
+
+O desenvolvimento também proporcionou experiência prática com resolução de erros de integração, validação de dados e testes de comunicação entre diferentes serviços.
 ## Desenvolvimento
 
 O projeto está em desenvolvimento contínuo, com implementação gradual de funcionalidades, integração entre serviços e aprimoramento da experiência do usuário.
